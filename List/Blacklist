@@ -1,0 +1,7 @@
+Blacklist =
+{
+    2415886442, -- Flash
+    1221762872,  -- Tenakii
+}
+
+return Blacklist
