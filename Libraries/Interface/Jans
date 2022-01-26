@@ -1,5 +1,3 @@
-
-
 local library = { 
 	flags = { }, 
 	items = { } 
@@ -75,7 +73,7 @@ end
 function library:CreateWatermark(name, position)
     local gamename = marketplaceservice:GetProductInfo(game.PlaceId).Name
     local watermark = { }
-    watermark.Visible = true
+    watermark.Visible = false
     watermark.text = " " .. name:gsub("{game}", gamename):gsub("{fps}", "0 FPS") .. " "
 
     watermark.main = Instance.new("ScreenGui", coregui)
